@@ -1,0 +1,29 @@
+package com.hackbulgaria.corejava;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class LinkedListWithoutDuplicateTest {
+
+    LinkedListWithoutDuplicate<Integer> list;
+    
+    @Before
+    public void setUp() throws Exception {
+    }
+
+    @After
+    public void tearDown() throws Exception {
+    }
+
+    @Test
+    public void testAddE() {
+        list = new LinkedListWithoutDuplicate<>();
+        assertTrue(list.add(5));
+        assertTrue(list.add(15));
+        assertFalse(list.add(5));
+    }
+
+}
